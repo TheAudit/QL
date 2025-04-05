@@ -34,24 +34,27 @@ body {
 }
 
 .sidebar {
+    position: fixed;
     width: 200px;
     background: #2C2C2C;
+    opacity: 0.8;
     padding: 10px;
     transition: width 0.3s;
     height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+    z-index: 1000; /* So it stays on top */
 }
 
 .sidebar.collapsed {
-    width: 25px;
-    padding: 0;
-    overflow: hidden;
-    background: #2C2C2C;
     position: fixed;
     top: 0;
     left: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #2C2C2C;
+    opacity: 0.8;
+    width: 15px;
+    height: 100vh;
+    z-index: 1000; /* So it stays on top */
 }
 
 .sidebar.collapsed h3,
@@ -89,7 +92,6 @@ body {
 .content {
     flex-grow: 1;
     padding: 20px;
-    margin-left: 200px;
 }
 
 .right-bar {
@@ -135,7 +137,7 @@ body {
 }
 
 #openBtn {
-    position: fixed;
+    position: absolute;
     top: 10px;
     left: 0px;
     display: none;
