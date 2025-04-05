@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Music For Pleasure</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 120px;
+            height: 100vh;
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        #content {
+            margin-left: 140px;
+            padding: 20px;
+        }
+
+        .album-cover {
+            text-align: center;
+        }
+
+        .album-cover img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .description {
+            background: white;
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        audio {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h3>Site Info</h3>
+        <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div class="album-cover">
+            <img src="album-cover.jpg" alt="Album Cover">
+            <p><em>Just an album cover</em></p>
+        </div>
+
+        <div class="description">
+            <p>This album presents a suite of Gershwin arrangements by the Roger Webb Trio, a UK-based jazz ensemble led by the exceptionally talented pianist, composer, and arranger Roger Webb. I don't think Roger Webb is super well-known, his work in film and television (including the haunting score for Bartleby) is largely overlooked. Here his arrangements are both casually inventive yet very respectful of the source material. It is, after all, a Music For Pleasure record so it is not way off piste; a pretty jazz outing and a very easy and enjoyable listen. Released on the MFP label, the album sits intriguingly within its eclectic catalogue, yet another instance of their scattergun approach to commercial releases. There is no denying the musicianship on these recordings Webb and his trio bring a polished, studio-ready precision, likely honed through their work in stock and production music. The result is a record that, while not groundbreaking, is clearly well-crafted and still enjoyable, appealing to both jazz enthusiasts and casual listeners. One caveat, however, is the album’s cover art, which is, frankly, atrocious. Its garish design and clashing fonts do a disservice to the music within, but don’t let that deter you—this is, although not a hidden gem, a record that deserves to be judged solely by its auditory merits.</p>
+            <audio controls>
+                <source src="audio-sample.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="description">
+            <p><strong>Music for Pleasure</strong>, established in 1965, initially dedicated approximately one-third of its catalog to classical music, recognizing that classical buyers were more consistent in their purchasing habits. This focus later led to the creation of <strong>Classics for Pleasure (CFP)</strong>, a separate label specializing in classical recordings.</p>
+            <p>The widespread availability of inexpensive and well-recorded classical music, both from Music for Pleasure and similar labels, has provided an accessible entry point for listeners seeking to explore the genre. Bargain bins and charity shops continue to serve as an important means of discovery, offering recordings that, despite lacking the mainstream appeal of other types of music, retain significant artistic and historical value.</p>
+        </div>
+    </div>
+</body>
+</html>

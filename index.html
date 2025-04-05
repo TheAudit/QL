@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Labels of Love Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <button class="toggle-btn" id="toggleBtn"><i class="fa-solid fa-angles-left"></i></button>
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="#">Budget Labels</a></li>
+            <li><a href="#">Library</a></li>
+        </ul>
+        <h3>Site Info</h3>
+        <ul>
+            <li><a href="SiteInfo/Contact.htm">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <button class="toggle-btn" id="openBtn"><i class="fa-solid fa-angles-right"></i></button>
+    <div class="content">
+        <h1>Charity Shop Classical Music</h1>
+        <p>Charity shops in the UK often contain a significant selection of classical music, primarily due to shifts in musical tastes and the demographics of those donating records. As classical music has become less popular among younger generations, collections amassed by older listeners—who grew up in an era where the genre was more widely appreciated—frequently find their way into second-hand stores.</p>
+        <div class="image-container">
+            <figure>
+                <img src="Images/MFP 2116.jpg" alt="Album Cover">
+                <figcaption>Just an album cover</figcaption>
+            </figure>
+        </div>
+        <div class="card audio-card p-3 my-3">
+            <p>
+
+                This album presents a suite of Gershwin arrangements by the Roger Webb Trio, a UK-based jazz ensemble led by the exceptionally talented pianist, composer, and arranger Roger Webb. I don’t think Roger Webb is super well-known, his work in film and television (including the haunting score for Bartleby) is largely overlooked. Here his arrangements are both casually inventive yet very respectful of the source material. It is, after all, a Music For Pleasure record so it is not way off piste; a pretty jazz outing and a very easy and enjoyable listen.
+                
+                Released on the MFP label, the album sits intriguingly within its eclectic catalogue, yet another instance of their scattergun approach to commercial releases. There is no denying the musicianship on these recordings Webb and his trio bring a polished, studio-ready precision, likely honed through their work in stock and production music. The result is a record that, while not groundbreaking, is clearly well-crafted and still enjoyable, appealing to both jazz enthusiasts and casual listeners.
+                
+                One caveat, however, is the album’s cover art, which is, frankly, atrocious. Its garish design and clashing fonts do a disservice to the music within, but don’t let that deter you—this is, although not a hidden gem, a record that deserves to be judged solely by its auditory merits.
+            </p>
+            <audio controls class="custom-audio w-100">
+                <source src="Audio/Malaria_Fever.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <p><strong>Music for Pleasure</strong>, established in 1965, initially dedicated approximately one-third of its catalog to classical music, recognizing that classical buyers were more consistent in their purchasing habits. This focus later led to the creation of <strong>Classics for Pleasure (CFP)</strong>, a separate label specializing in classical recordings.</p>
+        <p>The widespread availability of inexpensive and well-recorded classical music, both from Music for Pleasure and similar labels, has provided an accessible entry point for listeners seeking to explore the genre. Bargain bins and charity shops continue to serve as an important means of discovery, offering recordings that, despite lacking the mainstream appeal of other genres, retain significant artistic and historical value.</p>
+    </div>
+    <div class="right-bar"></div>
+    <script>
+        const sidebar = document.getElementById("sidebar");
+        const toggleBtn = document.getElementById("toggleBtn");
+        const openBtn = document.getElementById("openBtn");
+
+        console.log("Script loaded. Sidebar state:", sidebar.classList.contains("collapsed") ? "collapsed" : "expanded");
+
+        toggleBtn.addEventListener("click", () => {
+            console.log("Close button clicked");
+            sidebar.classList.add("collapsed");
+            openBtn.style.display = "block";
+            console.log("Sidebar collapsed");
+        });
+
+        openBtn.addEventListener("click", () => {
+            console.log("Open button clicked");
+            sidebar.classList.remove("collapsed");
+            openBtn.style.display = "none";
+            console.log("Sidebar expanded");
+        });
+    </script>
+</body>
+</html>
